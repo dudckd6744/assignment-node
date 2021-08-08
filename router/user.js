@@ -9,7 +9,7 @@ const { User } =require("../models");
 
 
 Router.post("/join",async (req,res)=>{
-    const name = req.body.name
+    const name = req.body.name 
     const email = req.body.email
     const password = req.body.password
     let reg_pwd = /^.*(?=.{6,20})(?=.*[0-9])(?=.*[a-zA-Z]).*$/;
