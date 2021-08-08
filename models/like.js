@@ -22,7 +22,8 @@ class Like extends Sequelize.Model {
         });
     }
     static associate(db) {
-
+        // db.Like.belongsTo(db.User);
+        // db.Like.belongsTo(db.Board);
     }
 };
 

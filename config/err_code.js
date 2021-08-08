@@ -1,6 +1,6 @@
 let err = {
     exist :{
-        statusCode : 404,
+        statusCode : 403,
         message: "이미 해당 유저가 존재합니다."
     },
     empty :{

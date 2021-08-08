@@ -20,7 +20,7 @@ class Board extends Sequelize.Model {
                 defaultValue:0,
                 allowNull: false,
             },
-            islike: { 
+            isLike: { 
                 type: Sequelize.BOOLEAN,
                 defaultValue:false,
                 allowNull: false, 
