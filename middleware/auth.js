@@ -24,7 +24,7 @@ module.exports = async (req, res, next) => {
 module.exports.parsing = async (req, res, next) => {
     let token = req.headers["authorization"];
     if (!token) return res.json({statusCode:"401",message:"권한이 없습니다."});
-    if (token.indexOf('Bearer') === 0) token = token.slice(7);
+    if (token.indexOf('Bearer ') === 0) token = token.slice(7);
     try {
         const decoded = await jwt.verify(token);
         if (!decoded) return res.status(401).end();
